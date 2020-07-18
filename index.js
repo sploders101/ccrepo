@@ -28,7 +28,7 @@ const statAsync = util.promisify(fs.stat);
 const app = module.exports = express.Router();
 
 app.get("/",function(req,res) {
-	res.header("Location","http://shaunkeys.com/ccfiles/download/utils/update")
+	res.header("Location","http://ccrepo.shaunkeys.com/download/utils/update")
 	res.status(301).send();
 });
 app.use("/upload", async function(req,res) {
